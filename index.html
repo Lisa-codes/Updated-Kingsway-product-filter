@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingsway Product Filter</title>
+    <!--stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap plugin -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+<!-- font awesome plugin-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row no-gutters">
+            <div class="col-md-3 no-left-padding" id="filterContainer">
+                <div class="p-3  bg-light border rounded-3" style="height: 100%; width: 320px; position: fixed; margin-left: 0; ">
+                    <h5>Product Filters</h5>
+                    <form id="filterForm">
+                        <div class="form-group">
+                            <label for="category">Product Type</label>
+                            <!-- additional modern styling for dropdown-->
+                            <div class="dropdown-container">
+                                <div class="dropdown-header" onclick="toggleDropdown('type')">
+                                    <span>Select Type</span>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="dropdown-content" id="type-dropdown">
+                                    <!--end-->
+                            <select class="form-control" id="type" name="productType">
+                                <option value="">All</option>
+                                <option value="productType">IT</option>
+                                <option value="productType">RIM ACCESSOR </option>
+                                <option value="productType">WORKSHOP EQU</option>
+                                <option value="producttype">AUTO ACCESSO </option>
+                                <option value="producttype">AUTO BOUTIQU </option>
+                                <option value="producttype">WLUBRICANTS </option>
+                                <option value="producttype">OFFICE EXP </option>
+                                <option value="producttype">PROJECT </option>
+                                <option value="producttype">TYRE </option>
+                                <option value="producttype"> SERVICES </option>
+                                <option value="producttype"> RIM </option> 
+                                <option value="producttype">BATTERY</option>
+                                <option value="producttype">MARKETING</option>
+                                <option value="producttype">MAINTENANCE</option>
+                                <option value="producttype">CORPOTRAIN</option>
+                                <option value="producttype">FLAP</option>
+                                <option value="producttype">TYRE REPAIR </option>
+                                <option value="producttype">TYRE SERVICE </option>
+                                <option value="producttype">Motorcycle </option>
+                                <option value="producttype">LEASING </option>
+                                <option value="producttype">TYRE ACCESSO </option>
+                                <option value="producttype">RETREAD </option>
+                                <option value="producttype">TV </option>
+                                <option value="producttype">TYRE INSURE </option>
+                                <option value="producttype">Car Service </option>
+                                <option value="producttype">SECURITY </option>
+                                <option value="producttype">WORKSHOP TOO </option>
+                                <option value="producttype">TUBE </option>
+                            </select>
+                        </div>
+                        <!--added divs-->
+                        </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="brand">Brand</label>
+                            <!--additional -->
+                            <div class="dropdown-container">
+                                <div class="dropdown-header" onclick="toggleDropdown('brands')">
+                                    <span>Select Brand</span>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="dropdown-content" id="brands-dropdown">
+                                    <!--end -->
+                            <select class="form-control" id="brands" name="brand">
+                                <option value="">All</option>
+                                <option value="brand">ARDUZZA</option>
+                                <option value="brand">APOLLO</option>
+                                <option value="brand">ARMSTRONG</option>
+                                <option value="brand">BFGOODRICH</option>
+                                <option value="brand">BRIDGESTONE</option>
+                                <option value="brand">CONTINENTAL</option>
+                                <option value="brand">COMFORSER</option>
+                                <option value="brand">CHINESE</option>
+                                <option value="brand">COOPER</option>
+                                <option value="brand">GENERAL TIRE</option>
+                                <option value="brand">HIFLY</option>
+                                <option value="brand">DUNLOP</option>
+                                <option value="brand">DAVANTI</option>
+                                <option value="brand">EFIPLUS</option>
+                                <option value="brand">EVERGREEN</option>
+                                <option value="brand">FIRESTONE</option>
+                                <option value="brand">FALKEN</option>
+                                <option value="brand">GOODYEAR</option>
+                                <option value="brand">COMFORSER</option>
+                                <option value="brand">GT RADIAL</option>
+                                <option value="brand">HANKOOK</option>
+                                <option value="brand">HERCULES</option>
+                                <option value="brand">INFINITY</option>
+                                <option value="brand">IMPORTED</option>
+                                <option value="brand">JK</option>
+                                <option value="brand">KLEBER</option>
+                                <option value="brand">KUMHO</option>
+                                <option value="brand">LAUFENN</option>
+                                <option value="brand">MARSHAL</option>
+                                <option value="br'and">MICHELIN</option>
+                                <option value="producttype">NANGKANG</option>
+                                <option value="producttype">NEXEN</option>
+                                <option value="producttype">NOKIAN/option>
+                                <option value="producttype">OTTANI</option>
+                                <option value="producttype">PRESTIGE</option>  
+                                <option value="producttype">PIRELLI</option>
+                                <option value="producttype">ROADX</option>
+                            </select>
+                        </div>
+                        <!--added divs-->
+                        </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="category">Category</label>
+                            <!-- additional for category-->
+                            <div class="dropdown-container">
+                                <div class="dropdown-header" onclick="toggleDropdown('category')">
+                                    <span>Select Category</span>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="dropdown-content" id="category-dropdown">
+                                    <!--end -->
+                            <select class="form-control" id="category" name="category">
+                                <option value="">All</option>
+                                <option value="category">EARTHMOVER</option>
+                                <option value="category">LIGHT TRUCK</option>
+                                <option value="category">AGRICULTURE</option>
+                                <option value="category">PASSENGER CA</option>
+                                <option value="category">4X4/ SUV </option>
+                                <option value="category">INDUSTRIAL</option>
+                                <option value="category">TRUCK & BUS </option>
+                                <option value="category">4X4</option>
+                                <option value="category">RALLY</option>
+                                <option value="category">MOTOR CYCLE </option>
+                            </select>
+                        </div>
+                        <!--added divs-->
+                        </div>
+                        </div>
+                        <button type="button" class="btn btn-primary border-0" style="background-color: #ee0d09;" onclick="applyFilters()">Apply Filters</button>
+                        <button type="button" class="btn btn-secondary border-0"   onclick="clearFilters()">Clear Filters</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="col-md-9">
+                <div id="resultsInfo" class="mt-3 ms-4"></div> <!-- Container for results info -->
+                <div class="p-3 m-0 bg-light border rounded-3 fs-6" id="productContainer">
+                    <!-- Product list will be dynamically generated here -->
+                </div>
+                <nav >
+                    <ul class="pagination justify-content-center text-danger " id="pagination">
+                        <!-- Pagination items will be dynamically generated here -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+   
+   <script src="main.js"></script>
+</body>
+</html>
